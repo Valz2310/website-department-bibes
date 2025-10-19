@@ -1,0 +1,35 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #005f73;
+  text-align: center;
+}
+
+nav {
+  background-color: #94d2bd;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #005f73;
+  border-radius: 4px;
+}
+.container {
+  width: 1200px;           
+  margin: 0 auto;          
+  background-color: #fff;  
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);}

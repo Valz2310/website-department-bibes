@@ -1,17 +1,73 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head><h16><I><b> BIOMEDICAL ENGINEERING </I></h16></B></head>
-    <meta charset = 'UTF-8'>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The BioEng Page</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
   
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    padding: 20px;
+  }
+  .card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  .card:hover { transform: scale(1.02); }
+  img {
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+  footer {
+    background: #0a9396;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+  }
+</style>
 </head>
-<title>THE BIOENG PAGE</title>
-<BR>
-<body><p>Biomedical engineering is an interdisciplinary field that applies engineering principles to biology and medicine to improve human health , creating devices like pacemakers and prosthetics, developing tissue engineering and regenerative medicine and enhancing diagnostic and therapeutic systems through technologies such as AI and wearables.<br>
-     This field combines aspects of <OL><li>mechanical</li><LI> electrical</LI><li> chemical</li><li>materials engineering </li></OL>with biology and medicine to solve problems in healthcare focusing on designing new technologies and improving existing ones for patient care and treatment.</p> 
-<p2>After five years of intense education, the Biomedical Engineering graduate has, at their disposal, a wide range of career opportunities such as employment as a Biomedical Engineer, Clinical Engineer, Service Engineer, Customer Support Engineer, Application Specialist, Engineer (Medical Devices), Patent Examiner, Biomedical Auditor or a Content Developer.<BR>  
-        The programme is designed with a huge focus on heritage-based education creativity and expansible techno-prenuership to enable graduates to initiate scalable business enterprises.</p2>
-    <img src="images (2).jpg" width="1300" height="450">
-    <a href = 'HMANI.HTML'>MEDICAL ANALYSIS AND INFORMATICS</a>
-   <A HREF = 'index.HTML'>HOME PAGE</A>
+
+<body>
+<h1><i>Biomedical Engineering</i></h1>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="HMANI.html">Medical Analysis & Informatics</a>
+  <a href="https://www.uz.ac.zw/index.php/chs-faculty-contacts">~ Contact</a>
+</nav>
+
+<div class="grid">
+  <div class="card">
+    <p>Biomedical engineering is an interdisciplinary field that applies engineering principles to biology and medicine to improve human health, creating devices like pacemakers and prosthetics, developing tissue engineering and regenerative medicine, and enhancing diagnostic and therapeutic systems through technologies such as AI and wearables.</p>
+    <p>This field combines aspects of:</p>
+    <ol>
+      <li>Mechanical</li>
+      <li>Electrical</li>
+      <li>Chemical</li>
+      <li>Materials Engineering</li>
+    </ol>
+    <p>...with biology and medicine to solve problems in healthcare, focusing on designing new technologies and improving existing ones for patient care and treatment.</p>
+  </div>
+
+  <div class="card">
+    <p>After five years of intense education, the Biomedical Engineering graduate has, at their disposal, a wide range of career opportunities such as employment as a Biomedical Engineer, Clinical Engineer, Service Engineer, Customer Support Engineer, Application Specialist, Engineer (Medical Devices), Patent Examiner, Biomedical Auditor or a Content Developer.</p>
+    <p>The programme is designed with a huge focus on heritage-based education, creativity, and expansible techno-preneurship to enable graduates to initiate scalable business enterprises.</p>
+  </div>
+</div>
+
+<img src="images (2).jpg" alt="Biomedical Engineering">
+
+<footer>&copy; 2025 The BioEng Page</footer>
 </body>
-    </html>
+</html>
+

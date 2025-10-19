@@ -1,43 +1,116 @@
 <!DOCTYPE html>
-<!doctype html>
 <html lang="en">
-    <MAIN>
-<head><h8><b>DEPARTMENT OF BIOMEDICAL INFORMATICS AND BIOMEDICAL ENGINEERING</b></h8></head>
-<body>
-    <meta charset="UTF-8">
-    <title>Home Page</title>
-    <NAV>
-       <A HREF="BIOENG.HTML">~ BIOMEDICAL ENGNEERING</A>
-    <A HREF="HMANI.HTML">~MEDICAL ANALYSIS AND INFORMATICS</A>
-    </NAV>
-    <style>
-         body {
-            background-image: 'bibes.jpg';
-background-size: cover;
-            color: black;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-    </style>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
     
 
+  #page-title {
+    background-color: #005f73;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid rgba(0, 95, 115, 0.8);
+  }  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2000px;
+    padding: 2000px;
+  }
 
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    flex: 1 1 30px; 
+    max-width: 2000px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
 
+  .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
 
-<Center><img SRC='1.jpg'
- width="300" height="300px" ALT ='WELCOME TO THE UZ BIBES WEBSITE'></center>
-  <BR> The Department of Biomedical Informatics and Biomedical Engineering aims to improve diagnostic accuracy, develop innovative treatments and modernize the national healthcare delivery through tools like electronic health records, telemedicine, and artificial intelligence.</BR>
-  This helps in improving precision of diagnosis, health data management, treatment and rehabilitation of health problems.It currently holds two (2) Degree Programmes which are Medical Analysis and Informatics as well as Biomedical Engineering. Students who complete their degrees in these fields will acquire  the essential knowledge and skills that are crutial in today's fast rapidly evolving technological and information age.
-<BR>
+  .grid-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    background-color: rgba(10,147,150,0.1);
+  }
 
+  .grid-item {
+    background-color: #e9ecef;
+    border-left: 5px solid #0a9396;
+    padding: 15px;
+    border-radius: 6px;
+  }
 
-   
+  .highlight {
+    display: inline-block;
+    background-color: #ee9b00;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  footer {
+    background-color: #0a9396;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 800px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    #page-title {
+      font-size: 18px;
+    }
+    .card {
+      flex: 1 1 100%;
+    }
+  }
+</style>
+</head>
+
+<body>
+  <h1 id="PAGE-TITLE">DEPARTMENT OF BIOMEDICAL INFORMATICS AND BIOMEDICAL ENGINEERING</h1>
+  <nav>
+    <a href="BIOENG.HTML">~ Biomedical Engineering</a>
+    <a href="HMANI.HTML">~ Medical Analysis & Informatics</a>
+    <a href="https://www.uz.ac.zw/index.php/chs-faculty-contacts">~ Contact</a>
+  </nav>
+<center>
+  <img src="1.jpg" alt="Welcome to UZ BIBES Website" ></center>
+    <div class="card">
+      <p>The Department of Biomedical Informatics and Biomedical Engineering aims to improve diagnostic accuracy, develop innovative treatments, and modernize national healthcare delivery through tools like electronic health records, telemedicine, and artificial intelligence.</p>
+    </div>
+
+    <div class="card">
+      <p>This helps in improving precision of diagnosis, health data management, treatment, and rehabilitation of health problems. It currently holds two (2) Degree Programmes: <span class="highlight">Medical Analysis and Informatics</span> and <span class="highlight">Biomedical Engineering</span>. Students who complete their degrees in these fields will acquire the essential knowledge and skills crucial in today's fast, rapidly evolving technological and information age.</p>
+    </div>
   
-<img src="bibes.jpg" width="1300px" height="450px">
 
+  <div class="grid-section">
+    <div class="grid-item">💡 <b>Innovation:</b> Advancing medicine with modern engineering.</div>
+    <div class="grid-item">🧠 <b>Knowledge:</b> Integrating information systems and human health.</div>
+    <div class="grid-item">⚙️ <b>Application:</b> Designing, testing, and improving healthcare technologies.</div>
+  </div>
+
+  <img src="bibes.jpg" width="100%" height="auto" alt="BIBES Department Image">
+
+  <footer>&copy; 2025 University of Zimbabwe | Department of BIBES</footer>
 </body>
-</MAIN>>
 </html>
-
-
