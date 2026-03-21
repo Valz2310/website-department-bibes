@@ -43,7 +43,7 @@ nameInput.addEventListener('keydown', function (e) {
 colorToggleBtn.addEventListener('click', function () { 
 isAlt = !isAlt; 
 if (isAlt) { 
-document.body.style.backgroundColor = '#e0f7fa'; // light teal 
+document.body.style.backgroundColor = 'black'; 
 messageBox.classList.remove('hidden'); 
 colorToggleBtn.textContent = 'Restore Background'; 
 console.log('Alternate background applied.'); 
