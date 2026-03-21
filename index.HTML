@@ -5,11 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Home Page</title>
 <link rel="stylesheet" href="style.css">
-
 <style>
-    
-
-  #page-title {
+     #page-title {
     background-color: #005f73;
     color: white;
     padding: 20px;
@@ -23,8 +20,7 @@
     gap: 2000px;
     padding: 2000px;
   }
-
-  .card {
+ .card {
     background-color: #ffffff;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -34,28 +30,24 @@
     box-sizing: border-box;
     transition: transform 0.3s, box-shadow 0.3s;
   }
-
-  .card:hover {
+.card:hover {
     transform: scale(1.03);
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   }
-
-  .grid-section {
+.grid-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px;
     padding: 20px;
     background-color: rgba(10,147,150,0.1);
   }
-
-  .grid-item {
+.grid-item {
     background-color: #e9ecef;
     border-left: 5px solid #0a9396;
     padding: 15px;
     border-radius: 6px;
   }
-
-  .highlight {
+.highlight {
     display: inline-block;
     background-color: #ee9b00;
     color: white;
@@ -69,8 +61,7 @@
     padding: 10px;
     font-size: 14px;
   }
-
-  @media (max-width: 800px) {
+ @media (max-width: 800px) {
     nav {
       flex-direction: column;
       align-items: flex-start;
@@ -84,33 +75,35 @@
   }
 </style>
 </head>
-
 <body>
-  <h1 id="PAGE-TITLE">DEPARTMENT OF BIOMEDICAL INFORMATICS AND BIOMEDICAL ENGINEERING</h1>
+  <h2 id="PAGE-TITLE">DEPARTMENT OF BIOMEDICAL INFORMATICS AND BIOMEDICAL ENGINEERING</h2>
   <nav>
     <a href="BIOENG.HTML">~ Biomedical Engineering</a>
     <a href="HMANI.HTML">~ Medical Analysis & Informatics</a>
-    <a href="https://www.uz.ac.zw/index.php/chs-faculty-contacts">~ Contact</a>
+    <a href="https://share.google/HkOvjH02etTmOrCIwk">~ Contact</a>
   </nav>
 <center>
   <img src="1.jpg" alt="Welcome to UZ BIBES Website" ></center>
     <div class="card">
       <p>The Department of Biomedical Informatics and Biomedical Engineering aims to improve diagnostic accuracy, develop innovative treatments, and modernize national healthcare delivery through tools like electronic health records, telemedicine, and artificial intelligence.</p>
     </div>
-
-    <div class="card">
+ <div class="card">
       <p>This helps in improving precision of diagnosis, health data management, treatment, and rehabilitation of health problems. It currently holds two (2) Degree Programmes: <span class="highlight">Medical Analysis and Informatics</span> and <span class="highlight">Biomedical Engineering</span>. Students who complete their degrees in these fields will acquire the essential knowledge and skills crucial in today's fast, rapidly evolving technological and information age.</p>
     </div>
-  
-
   <div class="grid-section">
     <div class="grid-item">💡 <b>Innovation:</b> Advancing medicine with modern engineering.</div>
     <div class="grid-item">🧠 <b>Knowledge:</b> Integrating information systems and human health.</div>
     <div class="grid-item">⚙️ <b>Application:</b> Designing, testing, and improving healthcare technologies.</div>
   </div>
-
-  <img src="bibes.jpg" width="100%" height="auto" alt="BIBES Department Image">
-
-  <footer>&copy; 2025 University of Zimbabwe | Department of BIBES</footer>
+<img src="bibes.jpg" width="100%" height="auto" alt="BIBES Department Image">
+<footer>&copy; 2025 University of Zimbabwe | Department of BIBES</footer>
+<H1 Id="greeting">Welcome</H1>
+  <input id="nameInput" placeholder="Type your name">
+  <button id="updateNameBtn">Update Greeting</button>
+<button id="colortogglebutton">Toggle background color</button>
+<div id="messageBox" class="hidden">
+  <p id="messageText"></p>
+</div>
+  <script src ="script.js"></script>
 </body>
 </html>
